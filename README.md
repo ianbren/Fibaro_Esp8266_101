@@ -6,6 +6,8 @@ Components
 - basic Fibaro Virtual Device that polls an ESP8266
 - basic ESP8266 code to establish a web server and pass back JSON
 
+Notes
+- ESP8266 builds on Arduino IDE for simplicity
 
 Changes to make to the code
 - update the ESP8266 SSID and Password for the wifi - hard coded here for simplicity
