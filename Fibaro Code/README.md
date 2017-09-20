@@ -16,9 +16,11 @@ In the "Advanced" Section
 To test
 - Go to the "Advanced" tab and scroll down until the "Test ESP8266" button's code is seen.
 - Press "Debug" for the "Test ESP8266" button
+- Press "Start" to enable debugging
 - In the new window, press "Test ESP8266"
-- Esure there's text returned
+- Esure there's text returned - it will be JSON if you are using the companion ESP8266 code
 
-To Debug
+
+If there are issues 
 - in a browser, check that there's some text returned when you select the IP address used in the "General" tab above.
 
