@@ -1,3 +1,4 @@
+-- make sure the Virtual Device has the IP and Port of the ESP8266 you are testing against
 local thisdevice = fibaro:getSelfId()
 
 local conn = Net.FHttp(fibaro:getValue(thisdevice, 'IPAddress'), fibaro:getValue(thisdevice, 'TCPPort')) 
@@ -9,6 +10,7 @@ fibaro:debug(response)
 fibaro:sleep(1)
 
 if errorCode == 0 then 
+-- do something here if you want to
 else 
   fibaro:debug("error") 
 end
