@@ -1,0 +1,14 @@
+local thisdevice = fibaro:getSelfId()
+
+local conn = Net.FHttp(fibaro:getValue(thisdevice, 'IPAddress'), fibaro:getValue(thisdevice, 'TCPPort')) 
+
+response, status, errorCode = conn:GET('/')
+
+fibaro:debug(response)
+
+fibaro:sleep(1)
+
+if errorCode == 0 then 
+else 
+  fibaro:debug("error") 
+end
